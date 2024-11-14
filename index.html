@@ -46,15 +46,90 @@
             </ul>
         </nav>
     </header>
-<main>
+    <main>
+
+        <!-- Se crea un carrusel de imagenes -->
+        <div id="Carousel">
+            <div class="carouselGato">
+                <div class="carousel-item">
+                    <img src="./images/british.jpg" alt="primergato">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/ciame.jpg" alt="segundogato">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/ragdoll.jpg" alt="tercergato">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"> Next</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Se crea una section para dividir tarjetas de representacion de gatos -->
     <section id="razas">
         <h2>Los gatos y sus especies</h2>
         <p>Existen muchas especies de gatos, a continuación se mostrarán algunas de las más destacadas</p>
         <ul>
-            <li><img src="./images/Gio (2).ico" alt="Ciamés" width="250px" title="Gato Ciamés" ></li>
+            <li><img src="./images/ciame.jpg" alt="Ciamés" width="250px" title="Gato Ciamés">
+                <p>Gato Ciamés</p>
+            </li>
+            <li><img src="./images/british.jpg" alt="Britanico" width="250px" title="Gato Britanico">
+                <p>Gato Britanico</p>
+            </li>
+            <li><img src="./images/ragdoll.jpg" alt="ragdoll" width="250px" title="Gato ragdoll">
+                <p>Gato ragdoll</p>
+            </li>
         </ul>
     </section>
-</main>
+
+
+    <!-- Se crea un apartado para una seccion que da introducción a un formulario -->
+    <fieldset id="contacto">
+        <h2>Contactanos</h2>
+        <p>Registra tus datos para formar parte de la familia Gatuna</p>
+        <!-- Inicia formulario -->
+        <form>
+            <label for="nombre">Nombre completo: </label>
+            <input type="text" id="nombre" placeholder="Introduce tu nombre completo" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+            <label for="nombre">Edad </label>
+            <select id="asunto" required>
+                <option>Mayor a 40</option>
+                <option>30-40</option>
+                <option>20-30</option>
+                <option>20-15</option>
+            </select>
+            <label for="text">Nacionalidad</label>
+            <select id="asunto" required>
+                <option>Mexicana (o)</option>
+                <option>Extranjera (o)</option>
+            </select>
+            <legend>Género</legend>
+            <!-- Se crea una seccion de radio botones -->
+            <label for="genero-masculino">Masculino</label>
+            <input type="radio" name="genero" id="genero-masculino">
+
+            <label for="genero-femenino">Femenino</label>
+            <input type="radio" name="genero" id="genero-femenino">
+
+            <label for="genero-otro">Otro</label>
+            <input type="radio" name="genero" id="genero-otro">
+
+            <!-- Se crea un cuadro de texto libre -->
+            <br>
+            <label for="mensaje">¿Porque quieres formar parte de la familiar gatuna?</label>
+            <br>
+            <textarea id="mensaje" rows="15" placeholder="Escribe tu respuesta aquí..." required>
+                </textarea>
+            <br>
+            <button class="submit">Submit</button>
+    </fieldset>
 </body>
 
 </html>
